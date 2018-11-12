@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		005C5FA65DB4E7895EDDE5D2 /* Pods_Pokedex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D4A435BD497E6B29A2861A8 /* Pods_Pokedex.framework */; };
+		1D2C6019219A18D40016DE91 /* Font in Resources */ = {isa = PBXBuildFile; fileRef = 1D2C6018219A18D40016DE91 /* Font */; };
 		1D9E82F32199DFB300E14BCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9E82F22199DFB300E14BCB /* AppDelegate.swift */; };
 		1D9E82F52199DFB300E14BCB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9E82F42199DFB300E14BCB /* ViewController.swift */; };
 		1D9E82F82199DFB300E14BCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D9E82F62199DFB300E14BCB /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D2C6018219A18D40016DE91 /* Font */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Font; sourceTree = "<group>"; };
 		1D9E82EF2199DFB300E14BCB /* Pokedex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pokedex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D9E82F22199DFB300E14BCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D9E82F42199DFB300E14BCB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				1D9E82F92199DFB400E14BCB /* Assets.xcassets */,
 				1D9E82FB2199DFB400E14BCB /* LaunchScreen.storyboard */,
 				1D9E82FE2199DFB400E14BCB /* Info.plist */,
+				1D2C6018219A18D40016DE91 /* Font */,
 			);
 			path = Pokedex;
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 				1D9E82FD2199DFB400E14BCB /* LaunchScreen.storyboard in Resources */,
 				1D9E82FA2199DFB400E14BCB /* Assets.xcassets in Resources */,
 				1D9E82F82199DFB300E14BCB /* Main.storyboard in Resources */,
+				1D2C6019219A18D40016DE91 /* Font in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
