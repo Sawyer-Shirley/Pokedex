@@ -18,18 +18,6 @@ class ViewController: UIViewController {
     
     let pokedexBasicLink = "https://pokeapi.co/api/v2/pokemon/"
     
-    //All the variables that will store information about the pokemon
-    var pokeId = ""
-    var pokeName = ""
-    var pokeAbilities = ""
-    var pokeHeight = ""
-    var pokeWeight = ""
-    var pokeForms = ""
-    var pokeArea = ""
-    var pokeMoves = ""
-    var pokeSpecies = ""
-    var pokeStats = ""
-    var pokeType = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,11 +43,41 @@ class ViewController: UIViewController {
         //URL
         let requestURL = pokedexBasicLink + nameURLComponent + "/"
         
+        //Printing info into view
         Alamofire.request(requestURL).responseJSON { (response) in
             switch response.result {
             case .success(let value):
                 let json = JSON(value)
-                self.infoView.text = json["name"].stringValue
+                self.infoView.text = json.rawString()
+                //All the variables that will store information about the pokemon
+                var pokeId = json["id"].stringValue
+                var pokeNames = json["name"].stringValue
+                //Preparing format for organized info
+                let format = """
+Name: \(pokeNames.self)
+                
+Id: \(pokeId.self)
+
+Stats:
+
+Type:
+
+Species:
+
+Forms:
+
+Height:
+
+Weight:
+
+Location:
+
+Moves:
+
+Abilities:
+
+"""
+                //self.infoView.text = format
             case .failure(let error):
                 self.infoView.text = "Invalid selection entered or an error occured. Try again."
                 print(error.localizedDescription)
